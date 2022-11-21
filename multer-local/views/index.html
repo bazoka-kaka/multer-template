@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Image</title>
+  </head>
+  <body>
+    <h1>Upload Image Using Multer with Nodejs</h1>
+    <form action="/upload-single" enctype="multipart/form-data" method="POST">
+      <label for="single-image">Upload Single Image</label>
+      <input type="file" id="single-image" name="single-image" required />
+      <button type="submit">Upload</button>
+    </form>
+    <!-- <hr />
+    <form action="/upload-multiple" enctype="multipart/form-data" method="POST">
+      <label for="multiple-images">Upload Multiple Images</label>
+      <input
+        type="file"
+        id="multiple-images"
+        name="multiple-images"
+        required
+        multiple
+      />
+      <button type="submit">Upload</button>
+    </form> -->
+  </body>
+</html>
