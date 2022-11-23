@@ -1,5 +1,6 @@
 const express = require("express");
 const multer = require("multer");
+const cors = require("cors");
 
 const path = require("path");
 const app = express();
@@ -17,13 +18,14 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 // middlewares
+app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "uploads")));
 
 // routes
 app.post("/upload", upload.single("photo"), (req, res) => {
   // username, photo
-  res.json({ message: `user ${username} created!` });
+  res.json({ message: `user ${req.body.username} created!` });
 });
 
 app.listen(3500, () => {
