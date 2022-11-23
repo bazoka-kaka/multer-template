@@ -4,6 +4,7 @@ Contains:
 
 1. Local multer
 2. Online multer using MongoDB
+3. Mern multer with ReactJS
 
 Sources:
 
