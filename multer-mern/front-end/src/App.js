@@ -1,5 +1,11 @@
+import User from "./components/User";
+
 function App() {
-  return <div></div>;
+  return (
+    <>
+      <User />
+    </>
+  );
 }
 
 export default App;
